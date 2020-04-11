@@ -23,8 +23,8 @@ let arrMax = numbers => {
 //Req.3d
 let sumEvens = arr => {
   let sum = 0;
-  for (sum of even) {
-    sum += even;
+  for (elem of arr) {
+    sum += elem;
   }
-  console.log(sumEvens);
+  return sum;
 };
