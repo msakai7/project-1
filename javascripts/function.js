@@ -11,10 +11,10 @@ let arrAvg = arr => {
 
 //Req.3c
 let arrMax = numbers => {
-  let currentMaximum = -Infinity;
-  numbers.forEach(function(numbers) {
-    if (number > currentMaximum) {
-      currentMaximum = number;
+  let currentMaximum = numbers[0];
+  numbers.forEach(x => {
+    if (x > currentMaximum) {
+      currentMaximum = x;
     }
   });
   return currentMaximum;
@@ -23,8 +23,10 @@ let arrMax = numbers => {
 //Req.3d
 let sumEvens = arr => {
   let sum = 0;
-  for (elem of arr) {
-    sum += elem;
+  for (x of arr) {
+    if (x % 2 == 0) {
+      sum = sum + x;
+    }
   }
   return sum;
 };
